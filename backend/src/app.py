@@ -1,7 +1,7 @@
 from flask import Flask, request
 from flask_cors import CORS
 
-app = Flask(__name__, static_folder='./build', static_url_path='/')
+app = Flask(__name__, static_folder='../../notes/build', static_url_path='/')
 
 @app.route('/', methods=['GET'])
 def hello():
