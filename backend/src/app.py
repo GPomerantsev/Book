@@ -3,9 +3,9 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return '<h1>Hello World</h1>'
+@app.route('/', methods=['GET'])
+def hello():
+    return jsonify({"response":"This is Sentiment Application"})
 
 @app.route('/notes/', methods = ['POST'])
 def createNote():
