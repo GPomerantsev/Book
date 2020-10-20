@@ -1,0 +1,7 @@
+  
+{
+    "name": "notes",
+    "scripts": {
+      "build": "cd notes && npm i && npm run build"
+    }
+  }
