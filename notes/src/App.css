@@ -44,9 +44,7 @@ html, body, .App, #root  {
 }
 
 .App__list {
-  width: 25%;
   height: 100%;
-  border-right: 1px solid lightgray;
 }
 
 .App__action {
@@ -55,6 +53,10 @@ html, body, .App, #root  {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  margin: 10px;
+  padding: 10px;
   border-right: 1px solid lightgray;
+}
+
+.App_blockSpacing {
+  margin-bottom: 12px;
 }
