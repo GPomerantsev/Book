@@ -1,11 +1,12 @@
-from flask import Flask, request
+
+from flask import Flask, request, render_template
 from flask_cors import CORS
 
-app = Flask(__name__, static_folder='../../notes/build', static_url_path='/')
+app = Flask(__name__, static_url_path='../../notes/build')
 
 @app.route('/', methods=['GET'])
 def hello():
-    return jsonify({"response":"This is Sentiment Application"})
+    return render_template('../../notes/build/index.html')
 
 @app.route('/notes/', methods = ['POST'])
 def createNote():
